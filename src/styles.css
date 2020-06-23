@@ -29,13 +29,14 @@ p {
 
 app-root {
     background: linear-gradient(to bottom, #fff, #ddd);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 100px 1fr 100px;
     grid-template-rows: 70px 1fr;
     grid-template-areas: 'nav nav nav' 'izq main der';
-    min-width: 850px;
+    min-width: 1030px;
+    min-height: 100vh;
 }
 
 router-outlet {
@@ -64,4 +65,8 @@ app-signIn, app-signUp {
 ::selection {
     color: #fff;
     background-color: #c30e2e;
+}
+
+::placeholder {
+    color: #9e949c;
 }

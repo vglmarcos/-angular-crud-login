@@ -1,22 +1,52 @@
+.container-login {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas: 'desc form';
+    gap: 50px;
+}
+
+.description {
+    width: 100%;
+    height: 100%;
+    grid-area: desc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-login {
+    text-align: justify;
+    font-size: 32px;
+    color: #c30e2e;
+    margin-bottom: 15px;
+}
+
+.text-login {
+    text-align: justify;
+}
+
+.form-area {
+    width: 100%;
+    height: 100%;
+    grid-area: form;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .card {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 90%;
+    width: 40%;
+    height: 70%;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
-}
-
-.title-card {
-    display: flex;
-    width: 100%;
-    height: 20%;
-    background-color: #ccc;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px 10px 0 0;
-    border-bottom: 2px solid #c30e2e;
+    box-shadow: 0 0 15px rgba(200, 200, 200, 0.4);
+    min-width: 460px;
+    min-height: 380px;
 }
 
 .body-card {
@@ -29,56 +59,52 @@
     width: 100%;
     height: 100%;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 30px 50px;
+    justify-content: space-evenly;
+    padding: 0 50px;
+}
+
+.button p {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .password-forget {
-    display: block;
-    color: #c30e2e;
-    margin-top: 15px;
-}
-
-.button {
-    padding-bottom: 35px;
-}
-
-
-label, input, button {
     display: inline-block;
-    width: 100%;
+    color: #c30e2e;
 }
 
 input, button {
-    height: 30px;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
     outline: none;
     border: none;
     border-radius: 4px;
-    transition-property: background-color;
-    transition: 0.3s ease;
-}
-
-label {
-    margin-bottom: 15px;
-    color: #000;
+    font-size: 18px;
 }
 
 input {
-    padding-left: 5px;
-    background-color: #ddd;
+    padding-left: 10px;
+    border: 1px solid #dddfe2;
+    background-color: #fff;
+    transition-property: border-color;
+    transition: 0.3s ease;
 }
 
 input:hover {
-    background-color: #ccc;
+    border-color: #babcbe;
 }
 
 input:focus {
-    background-color: #bbb;
+    border-color: #9d9ea0;
 }
 
 button {
     color: #fff;
     background-color: #c30e2e;
+    transition-property: background-color;
+    transition: 0.3s ease;
 }
 
 button:hover {
@@ -87,13 +113,4 @@ button:hover {
 
 button:active {
     background-color: #7c0c20;
-}
-
-.title {
-    font-size: 24px;
-}
-
-.title_form {
-    text-align: center;
-    color: #000;
 }

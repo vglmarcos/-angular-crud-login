@@ -1,23 +1,28 @@
-<div class="card">
-    <div class="title-card">
-        <h2 class="title">Bienvenido</h2>
+<div class="container-login">
+    <div class="description">
+        <h2 class="title-login">Inicia sesión para poder usar la aplicación</h2>
+        <p class="text-login">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero incidunt neque, id quod quisquam eaque vel mollitia, error eos rem quam consequatur nam delectus magnam dolorem ullam. Quisquam, nihil aliquid.</p>
     </div>
-    <div class="body-card">
-        <form class="form" action="">
-            <div class="form__input-name">
-                <label for="input_name">Nombre</label>
-                <input [(ngModel)]='user.name' type="text" id="input_name" autofocus autocomplete="off" name="name">
+    <div class="form-area">
+        <div class="card">
+            <div class="body-card">
+                <form class="form" action="">
+                    <div class="form__input-name">
+                        <input [(ngModel)]='user.name' type="text" id="input_name" autofocus autocomplete="off"
+                            name="name" placeholder="Nombre de usuario o correo electrónico">
+                    </div>
+                    <div class="form__input-password">
+                        <input [(ngModel)]='user.password' type="password" id="input_password" name="password"
+                            placeholder="Contraseña">
+                    </div>
+                    <div class="button">
+                        <button type="submit" (click)="signIn()">
+                            Ingresar
+                        </button>
+                        <p><a href="" class="password-forget">¿Olvidaste tu contraseña?</a></p>
+                    </div>
+                </form>
             </div>
-            <div class="form__input-password">
-                <label for="input_password">Contraseña</label>
-                <input [(ngModel)]='user.password' type="password" id="input_password" name="password">
-                <p><a href="" class="password-forget">¿Olvidaste tu contraseña?</a></p>
-            </div>
-            <div class="button">
-                <button type="submit" (click)="signIn()">
-                    Ingresar
-                </button>
-            </div>
-        </form>
+        </div>
     </div>
 </div>

@@ -4,8 +4,8 @@
         <h2 class="nav-title">Angular</h2>
     </div>
     <ul class="menu">
-        <li><a routerLink='home' class="item">Inicio</a></li>
-        <li><a routerLink='signIn' class="item">Iniciar sesión</a></li>
-        <li><a routerLink='signUp' class="item">Registrarse</a></li>
+        <li class="li"><a class="item" [routerLinkActive]="['active']" [routerLink]="['home']">Inicio</a></li>
+        <li class="li"><a class="item" [routerLinkActive]="['active']" [routerLink]="['signIn']">Iniciar sesión</a></li>
+        <li class="li"><a class="item" [routerLinkActive]="['active']" [routerLink]="['signUp']">Registrarse</a></li>
     </ul>
 </nav>

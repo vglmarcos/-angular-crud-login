@@ -5,5 +5,7 @@
 }
 
 .text-home {
+    display: inline-block;
     text-align: justify;
+    margin-bottom: 15px;
 }
