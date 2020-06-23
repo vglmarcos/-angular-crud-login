@@ -1,0 +1,51 @@
+.nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #263238, #000a12);
+    justify-content: space-between;
+}
+
+.logo {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item {
+    font-size: 20px;
+    color: #fff;
+    transition-property: color;
+    transition: 0.3s ease;
+}
+
+.item:hover {
+    color: #ccc;
+}
+
+.item:active {
+    color: #bbb;
+}
+
+.nav-img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+.nav-title {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    padding-left: 30px;
+}

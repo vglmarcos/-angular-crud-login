@@ -1,0 +1,9 @@
+.title-home {
+    display: inline-block;
+    font-size: 26px;
+    margin: 25px 0;
+}
+
+.text-home {
+    text-align: justify;
+}

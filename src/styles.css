@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+app-root {
+    background: linear-gradient(to bottom, #fff, #ddd);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas: 'nav nav nav' 'izq main der';
+    min-width: 850px;
+}
+
+router-outlet {
+    display: none;
+}
+
+app-nav {
+    grid-area: nav;
+}
+
+app-home {
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+}
+
+app-signIn, app-signUp {
+    display: flex;
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+::selection {
+    color: #fff;
+    background-color: #c30e2e;
+}

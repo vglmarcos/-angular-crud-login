@@ -1,0 +1,23 @@
+<div class="card">
+    <div class="title-card">
+        <h2 class="title">Bienvenido</h2>
+    </div>
+    <div class="body-card">
+        <form class="form" action="">
+            <div class="form__input-name">
+                <label for="input_name">Nombre</label>
+                <input [(ngModel)]='user.name' type="text" id="input_name" autofocus autocomplete="off" name="name">
+            </div>
+            <div class="form__input-password">
+                <label for="input_password">Contraseña</label>
+                <input [(ngModel)]='user.password' type="password" id="input_password" name="password">
+                <p><a href="" class="password-forget">¿Olvidaste tu contraseña?</a></p>
+            </div>
+            <div class="button">
+                <button type="submit" (click)="signIn()">
+                    Ingresar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
