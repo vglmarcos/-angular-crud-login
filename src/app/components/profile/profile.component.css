@@ -1,0 +1,114 @@
+.container-profile {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-profile {
+    display: grid;
+    width: 70%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(200, 200, 200, 0.4);
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 40px;
+    grid-template-areas: 'header' 'body' 'footer';
+    min-height: 400px;
+    min-width: 600px;
+    margin: 10px;
+}
+
+.card-profile-header {
+    grid-area: header;
+    background-color: #000a12;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+    height: 100%;
+}
+
+button {
+    height: 35px;
+    width: 100%;
+    max-width: 200px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    transition-property: background-color;
+    transition: 0.3s ease;
+}
+
+.delButton {
+    color: #fff;
+    background-color: #ff4444;
+}
+
+.delButton:hover {
+    background-color: #c43b3b;
+}
+
+.delButton:active {
+    background-color: #af3939;
+}
+
+
+.upButton {
+    background-color: #fff;
+    color: #000a12;
+}
+
+.upButton:hover {
+    background-color: #eee;
+}
+
+.upButton:active {
+    background-color: #ccc;
+}
+
+.title-profile {
+    font-size: 30px;
+}
+
+.card-profile-body {
+    grid-area: body;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-profile-body p b,
+.card-profile-footer p b {
+    font-size: 20px;
+}
+
+.card-profile-body p,
+.card-profile-footer p {
+    font-size: 20px;
+}
+
+
+.card-profile-footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    background-color: #000a12;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    padding-left: 20px;
+}

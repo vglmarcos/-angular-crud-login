@@ -1,0 +1,24 @@
+<div class="container-profile">
+    <div class="card-profile">
+        <div class="card-profile-header">
+            <h2 class="title-profile">Perfil</h2>
+            <div class="buttons">
+                <button class="delButton" (click)="deleteUser()">
+                    Eliminar perfil
+                </button>
+                <!--<button class="upButton">
+                    Actualizar datos
+                </button>-->
+            </div>
+        </div>
+        <div class="card-profile-body">
+            <p><b>Nombre de usuario:</b> {{profile.username}}</p>
+            <p><b>Nombre:</b> {{profile.name}}</p>
+            <p><b>Apellidos:</b> {{profile.lastname}}l</p>
+            <p><b>Correo Electrónico:</b> {{profile.email}}</p>
+        </div>
+        <div class="card-profile-footer">
+            <p><b>Id:</b> {{profile._id}}</p>
+        </div>
+    </div>
+</div>

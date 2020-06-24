@@ -20,8 +20,8 @@
                 <div class="form__input-confirm">
                     <input type="password" id="input_confirm" placeholder="Confirmar contraseña" [(ngModel)]='newUser.passwordConfirm' name="passwordConfirm">
                 </div>
-                <div class="button" (click)="signUp()">
-                    <button type="submit">
+                <div class="button">
+                    <button type="submit" (click)="signUp()">
                         Registrarse
                     </button>
                 </div>
