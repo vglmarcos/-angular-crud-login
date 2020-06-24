@@ -33,7 +33,7 @@ app-root {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 85% 1fr;
-    grid-template-rows: 70px 1fr 60px;
+    grid-template-rows: 60px 1fr 60px;
     grid-template-areas: 'nav nav nav' 'izq main der' 'footer footer footer';
     min-width: 950px;
     min-height: 100vh;
