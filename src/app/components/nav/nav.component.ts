@@ -8,6 +8,6 @@ import { AuthService } from '../../services/auth.service'
 })
 export class NavComponent {
     constructor(
-        private auth: AuthService
+        public auth: AuthService
     ) { }
 }
