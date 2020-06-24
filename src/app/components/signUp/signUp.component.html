@@ -3,26 +3,26 @@
         <div class="body-card">
             <form class="form" action="">
                 <div class="form__input-name">
-                    <input type="text" id="input_name" autofocus autocomplete="off" placeholder="Nombre">
+                    <input type="text" id="input_name" autofocus autocomplete="off" placeholder="Nombre" [(ngModel)]='newUser.name' name="name">
                 </div>
                 <div class="form__input-lastname">
-                    <input type="text" id="input_lastname" autofocus autocomplete="off" placeholder="Apellidos">
+                    <input type="text" id="input_lastname" autofocus autocomplete="off" placeholder="Apellidos" [(ngModel)]='newUser.lastname' name="lastname">
                 </div>
                 <div class="form__input-user">
-                    <input type="text" id="input_username" autofocus autocomplete="off" placeholder="Nombre de usuario">
+                    <input type="text" id="input_username" autofocus autocomplete="off" placeholder="Nombre de usuario" [(ngModel)]='newUser.username' name="username">
                 </div>
                 <div class="form__input-email">
-                    <input type="email" id="input_email" autofocus autocomplete="off" placeholder="Correo electrónico">
+                    <input type="email" id="input_email" autofocus autocomplete="off" placeholder="Correo electrónico" [(ngModel)]='newUser.email' name="email">
                 </div>
                 <div class="form__input-password">
-                    <input type="password" id="input_password" placeholder="Contraseña">
+                    <input type="password" id="input_password" placeholder="Contraseña" [(ngModel)]='newUser.password' name="password">
                 </div>
                 <div class="form__input-confirm">
-                    <input type="password" id="input_confirm" placeholder="Confirmar contraseña">
+                    <input type="password" id="input_confirm" placeholder="Confirmar contraseña" [(ngModel)]='newUser.passwordConfirm' name="passwordConfirm">
                 </div>
-                <div class="button">
+                <div class="button" (click)="signUp()">
                     <button type="submit">
-                        Envíar
+                        Registrarse
                     </button>
                 </div>
             </form>

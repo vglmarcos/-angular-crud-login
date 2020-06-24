@@ -17,9 +17,10 @@
 .menu {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 35%;
     align-items: center;
     justify-content: space-evenly;
+    min-width: 478px;
 }
 
 .li {

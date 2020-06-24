@@ -6,6 +6,7 @@
     grid-auto-rows: 1fr;
     grid-template-areas: 'desc form';
     gap: 50px;
+    padding: 40px;
 }
 
 .description {
@@ -18,7 +19,6 @@
 }
 
 .title-login {
-    text-align: justify;
     font-size: 32px;
     color: #c30e2e;
     margin-bottom: 15px;
@@ -26,6 +26,10 @@
 
 .text-login {
     text-align: justify;
+}
+
+.img-login {
+    width: 90%;
 }
 
 .form-area {
@@ -41,7 +45,7 @@
     display: flex;
     flex-direction: column;
     width: 40%;
-    height: 70%;
+    height: 90%;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(200, 200, 200, 0.4);
@@ -98,6 +102,10 @@ input:hover {
 
 input:focus {
     border-color: #9d9ea0;
+}
+
+input:focus::placeholder {
+    color: #c30e2e;
 }
 
 button {

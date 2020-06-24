@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./signIn.component.css']
 })
 export class SignInComponent implements OnInit {
-    user = { 
+    newUser = { 
         name: '',
         password: ''
     };
@@ -16,7 +16,7 @@ export class SignInComponent implements OnInit {
     }
 
     signIn(): boolean {
-        console.log(this.user);
+        console.log(this.newUser);
         return false;
     }
 
